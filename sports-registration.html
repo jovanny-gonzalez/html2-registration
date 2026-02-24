@@ -125,7 +125,11 @@ align-items: center;
 
 .inline input[type="radio"],
 .inline input[type="checkbox"] 
-{ width: auto; margin: 0; 
+{ 
+    width: auto; 
+    margin: 0;
+     
+
 } 
 
 /* Buttons */
@@ -273,17 +277,23 @@ margin-top: 6px;
         </p>
 
         <p>
-            <label>Ticket Type:<br/></label>
-            <input type="radio" name="ticket_type" value="1" checked>Standard
-            <input type="radio" name="ticket_type" value="2">VIP
-            <input type="radio" name="ticket_type" value="3">Student
+            <label>Ticket Type:<br/></label><br/>
+            Standard
+            <input type="radio" name="ticket_type" value="1" checked>
+            VIP
+            <input type="radio" name="ticket_type" value="2">
+            Student
+            <input type="radio" name="ticket_type" value="3">
         </p>
 
         <p>
-            <label>Extra Options:</label><br/>
-            <input type="checkbox" name="extras" value="parking">Parking<br/>
-            <input type="checkbox" name="extras" value="meal">Meal<br/>
-            <input type="checkbox" name="extras" value="merchandise">Merchandise
+            <label>Extra Options:<br/></label><br/>
+            Parking
+            <input type="checkbox" name="extras" value="parking"><br/>
+            Meal
+            <input type="checkbox" name="extras" value="meal"><br/>
+            Merchandise
+            <input type="checkbox" name="extras" value="merchandise">
         </p>
 
         <p>
