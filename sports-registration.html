@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url('https://images7.alphacoders.com/572/thumb-1920-572915.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+        padding: 5%;
+    }
+    .container{
+        background-color: white;
+        border-radius: 10px;
+        padding: 5%;
+        width: auto;
+        text-align: center;
+        padding: 5%;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        line-height: 1.5;
+    }
+    h1{
+        margin-bottom: 40px;
+    }
+    h2{
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    table{
+        border:1px solid rgb(155, 16, 16);
+        padding: 10px;
+        border-collapse: collapse;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+    th{
+        background-color: navajowhite;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    td{
+        border: 1px solid black;
+        padding: 10px;
+    }
+    p{
+        margin-bottom: 20px;
+
+    }
+
+    </style>
+    <meta charset="UTF-8" />
+    <title>Sports Registration</title>
+    <!-- This is where styling has taken place. Come back to this for fine tuning.-->
+</head>
+
+ <body> <div class="container"> 
+ <h1 style="color: rgb(109, 32, 180);">Sports Registration Page</h1>
+ <h2>Table</h2>
+
+ <p>
+    This section will contain a table with the events, dates, times, and locations of a sports event.
+ </p>
+ 
+ <table>
+    <th>Event</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Location</th>
+    <tr>
+        <td>Soccer Match</td>
+        <td>2/23/2026</td>
+        <td>2:00 PM</td>
+        <td>123 Park St</td>
+    </tr>
+ </table>
+ <h2>Registration Form</h2>
+ <p>
+    This section will contain a registration form for the soccer event. It will include a number of fields, some optional, some mandatory.
+ </p>
+    <form method="post" action="placeholder.php" style="text-align: left; margin-left: 20px; padding-left: 20px; padding-right: 20px;">
+        <fieldset>
+        <legend style="text-align: center;">Soccer Registration Form</legend>
+        <p>
+            <label>Full Name:</label><br/>
+            <input type="text" name="name" required>
+        </p>
+
+        <p>
+            <label>Email:</label><br/>
+            <input type="email" name="email" required>
+        </p>
+
+        <p>
+            <label>Password:</label><br/>
+            <input type="password" name="password" required>
+        </p>
+
+        <p>
+            <label>Confirm Password:</label><br/>
+            <input type="password" name="confirm_password" required>
+        </p>
+
+        <p>
+            <label>Age:</label><br/>
+            <input type="number" name="age" min="16" max="80" required>
+        </p>
+
+        <p>
+            <label>Ticket Type:<br/></label>
+            <input type="radio" name="ticket_type" value="1" checked>Standard<br/>
+            <input type="radio" name="ticket_type" value="2">VIP<br/>
+            <input type="radio" name="ticket_type" value="3">Student
+        </p>
+
+        <p>
+            <label>Extra Options:</label><br/>
+            <input type="checkbox" name="extras" value="parking">Parking<br/>
+            <input type="checkbox" name="extras" value="meal">Meal<br/>
+            <input type="checkbox" name="extras" value="merchandise">Merchandise
+        </p>
+
+        <p>
+            <label>Country:<br/></label>
+            <select name="where" required>
+                <option>Select a country</option>
+                <option>Spain</option>
+                <option>United States</option>
+                <option>Canada</option>
+                <option>Argentina</option>
+                <option>Brazil</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Date: </label><br/>
+            <input type="date" name="event_date"><br/>
+        </p>
+
+        <p>
+            <label>Time Controls: </label><br/>
+            <input type="time" name="arrival_time"><br/>
+        </p>
+
+        <p>Submit and Reset Buttons: </p>
+        <button type="submit" >Submit</button>
+        <button type="reset">Reset</button>
+
+        </fieldset>
+    </form>
+ </div> </body>
+</html>
